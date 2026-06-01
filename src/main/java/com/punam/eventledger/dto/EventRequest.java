@@ -7,6 +7,8 @@ import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.Map;
+
 import lombok.Data;
 
 
@@ -31,4 +33,6 @@ public class EventRequest {
 
     @NotNull
     private Instant eventTimestamp;
+
+    private Map<String, Object> metadata;
 }

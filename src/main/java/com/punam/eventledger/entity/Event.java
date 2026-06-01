@@ -48,4 +48,7 @@ public class Event {
 
     @Column(nullable = false)
     private Instant eventTimestamp;
+
+    @Column(columnDefinition = "TEXT")
+    private String metadata;
 }
